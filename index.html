@@ -1,4 +1,137 @@
+
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HITESH - Cybersecurity Portfolio</title>
+  <style>
+    :root {
+      --initial-bg: #000;
+      --initial-text: #00ff00;
+      --final-bg: #1a1a2e;
+      --final-text: #f1f1f1;
+    }
+
+    body {
+      background-color: var(--initial-bg);
+      color: var(--initial-text);
+      font-family: 'Courier New', Courier, monospace;
+      margin: 0;
+      padding: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      transition: background-color 1s ease, color 1s ease;
+    }
+
+    #typewriter {
+      max-width: 80ch;
+      white-space: pre-wrap;
+      font-size: 1.2rem;
+      border-right: 2px solid;
+      animation: blink 0.8s step-end infinite;
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+
+    #content {
+      display: none;
+      max-width: 800px;
+      font-family: Arial, sans-serif;
+    }
+
+    h1, h2 {
+      margin: 1rem 0 0.5rem;
+    }
+
+    button, a {
+      background-color: #00ffcc;
+      color: #000;
+      padding: 0.5rem 1rem;
+      margin: 0.5rem 0.5rem 0 0;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div id="typewriter"></div>
+  <div id="content">
+    <h1>Securing the Digital World, One Vulnerability at a Time.</h1>
+    <h2>Certified Ethical Hacker | Web Application Pentester | Cybersecurity Enthusiast</h2>
+    <p>Hi, I’m Hitesh Sharma, a cybersecurity professional with hands-on experience in Web Application Penetration Testing and Vulnerability Assessment. I’m passionate about discovering security flaws before attackers do and helping organizations protect their digital assets.</p>
+    <a href="#">View My Work</a>
+    <a href="#">Download Resume</a>
+
+    <h2>About Me</h2>
+    <p>I’m a Certified Ethical Hacker (CEH) with a strong foundation in web application security and a growing interest in network, mobile, and IoT penetration testing...</p>
+
+    <h2>Skills</h2>
+    <ul>
+      <li>Penetration Testing: Web, Network (beginner), Mobile (learning)</li>
+      <li>Tools: Burp Suite, OWASP ZAP, Nmap, Nikto, Metasploit, Wireshark</li>
+      <li>Techniques: SQL Injection, XSS, CSRF, Broken Authentication, IDOR</li>
+      <li>Certifications: CEH (Certified Ethical Hacker)</li>
+      <li>Platforms: TryHackMe, Hack The Box</li>
+    </ul>
+
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Web App Pentest Report – E-Commerce Platform:</strong> Found IDOR and SQL injection. <a href="#">[View Report]</a></li>
+      <li><strong>CTFs – TryHackMe:</strong> Web exploitation, privilege escalation, etc. <a href="#">[View Badge]</a></li>
+      <li><strong>VA – Internal CRM:</strong> Used Burp Suite and Nikto. <a href="#">[Summary]</a></li>
+    </ul>
+
+    <h2>Experience</h2>
+    <p><strong>Security Analyst – Codetechlab Pvt. Ltd. (Jan 2023 – Present)</strong></p>
+    <ul>
+      <li>Performed web app pentesting using OWASP Top 10.</li>
+      <li>Discovered SQLi, XSS, IDOR. Reported & patched.</li>
+      <li>Wrote reports with remediation steps.</li>
+    </ul>
+
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:HiteSharma11111@gmail.com">HiteSharma11111@gmail.com</a></p>
+    <p>LinkedIn: <a href="#">LinkedIn URL</a></p>
+    <p>GitHub: <a href="#">GitHub URL</a></p>
+  </div>
+
+  <script>
+    const typewriterText = `> Hello, I'm HITESH SHARMA...\n> CEH Certified | Penetration Tester | Exploit Developer`;
+    const typewriterEl = document.getElementById('typewriter');
+    const contentEl = document.getElementById('content');
+    let i = 0;
+
+    function typeWriter() {
+      if (i < typewriterText.length) {
+        typewriterEl.textContent += typewriterText.charAt(i);
+        i++;
+        setTimeout(typeWriter, 50);
+      } else {
+        typewriterEl.style.borderRight = 'none';
+        setTimeout(() => {
+          document.body.style.backgroundColor = 'var(--final-bg)';
+          document.body.style.color = 'var(--final-text)';
+          typewriterEl.style.display = 'none';
+          contentEl.style.display = 'block';
+        }, 2000);
+      }
+    }
+
+    window.onload = typeWriter;
+  </script>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -151,8 +284,8 @@
 </html>
 
 
-
-<!-- <!DOCTYPE html>
+<!--
+<!-- <!DOCTYPE html> -->
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -236,4 +369,5 @@
   </script>
 </body>
 </html>
+
  -->
