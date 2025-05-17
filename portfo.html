@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>cyberali92 - Portfolio</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #00ff00;
+      font-family: 'Courier New', Courier, monospace;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .typewriter {
+      max-width: 80ch;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2px solid #00ff00;
+      font-size: 1.5rem;
+      animation: typing 4s steps(80, end), blink 0.8s step-end infinite;
+    }
+
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 80ch;
+      }
+    }
+
+    @keyframes blink {
+      50% {
+        border-color: transparent;
+      }
+    }
+
+    .content {
+      display: none;
+      flex-direction: column;
+      margin-top: 2rem;
+    }
+
+    .show {
+      display: flex;
+    }
+
+    a {
+      color: #00ff00;
+      text-decoration: underline;
+      margin-top: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <div class="typewriter" id="intro"></div>
+    <div class="content" id="mainContent">
+      <h2>🧑‍💻 Penetration Tester | 🎯 CEH Certified</h2>
+      <p>🔐 Ethical Hacker with passion for cybersecurity & real-world attack simulation.</p>
+      <p>📜 <a href="./CEH-Certificate.pdf" target="_blank">View CEH Certificate</a></p>
+      <p>📎 <a href="https://linkedin.com/in/theme" target="_blank">LinkedIn</a></p>
+      <p>🌍 <a href="https://yourportfolio.com" target="_blank">Portfolio Site</a></p>
+      <p>📧 <a href="mailto:mymail@example.com">mymail@example.com</a></p>
+    </div>
+  </div>
+
+  <script>
+    const introText = `> Hello, I'm cyberali92...\n> CEH Certified | Penetration Tester | Exploit Developer`;
+    const introEl = document.getElementById('intro');
+    let i = 0;
+
+    function typeWriter() {
+      if (i < introText.length) {
+        introEl.innerHTML += introText.charAt(i);
+        i++;
+        setTimeout(typeWriter, 50);
+      } else {
+        document.getElementById('mainContent').classList.add('show');
+      }
+    }
+
+    window.onload = typeWriter;
+  </script>
+</body>
+</html>
