@@ -1,440 +1,440 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HITESH - Cybersecurity Portfolio</title>
-  <style>
-    :root {
-      --initial-bg: #000;
-      --initial-text: #00ff00;
-      --final-bg: #1a1a2e;
-      --final-text: #f1f1f1;
-    }
-
-    body {
-      background-color: var(--initial-bg);
-      color: var(--initial-text);
-      font-family: 'Courier New', Courier, monospace;
-      margin: 0;
-      padding: 0;
-      height: 100vh;
-      overflow: hidden;
-      transition: background-color 1s ease, color 1s ease;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    #typewriter {
-      max-width: 80ch;
-      white-space: pre-wrap;
-      font-size: 1.2rem;
-      border-right: 2px solid;
-      animation: blink 0.8s step-end infinite;
-    }
-
-    @keyframes blink {
-      50% { border-color: transparent; }
-    }
-
-    #main {
-      display: none;
-      flex-direction: row;
-      gap: 2rem;
-      padding: 2rem;
-      max-width: 1200px;
-      width: 100%;
-      box-sizing: border-box;
-    }
-
-    .left-panel img {
-      max-width: 300px;
-      border-radius: 15px;
-      box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
-    }
-
-    .right-panel {
-      max-width: 800px;
-      color: var(--final-text);
-      font-family: Arial, sans-serif;
-    }
-
-    h1, h2 {
-      margin: 1rem 0 0.5rem;
-    }
-
-    button, a {
-      background-color: #00ffcc;
-      color: #000;
-      padding: 0.5rem 1rem;
-      margin: 0.5rem 0.5rem 0 0;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      text-decoration: none;
-      font-weight: bold;
-    }
-  </style>
+  <title>The Hitesh Sharma | Portfolio</title>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/skins/color-red.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style-switcher.css" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="images/sairedanon.png" />
 </head>
-<body>
-  <div id="typewriter"></div>
-  <div id="main">
-    <div class="left-panel">
-      <img src="your-photo.png" alt="Hitesh Sharma Photo" />
+
+<body class="dark">
+  <canvas id="matrixCanvas"></canvas>
+  <!-- Matrix -->
+  <script src="/js/matrix.js"></script>
+  <!-- Main Container Start -->
+  <div class="main-container">
+    <!-- Aside Start -->
+    <div class="aside">
+      <div class="logo">
+        <a href="index.html"><span>H</span>itesh</a>
+      </div>
+      <div class="nav-toggler">
+        <span></span>
+      </div>
+      <ul class="nav">
+        <li>
+          <a href="#home" class="active"><i class="fa fa-home"></i> Home</a>
+        </li>
+        <li>
+          <a href="#about"><i class="fa fa-user"></i> About</a>
+        </li>
+        <li>
+          <a href="#education"><i class="fa fa-book"></i> Educations</a>
+        </li>
+        <li>
+          <a href="#contact"><i class="fa fa-comments"></i> Contact</a>
+        </li>
+
+      </ul>
     </div>
-    <div class="right-panel">
-      <h1>Securing the Digital World, One Vulnerability at a Time.</h1>
-      <h2>Certified Ethical Hacker | Web Application Pentester | Cybersecurity Enthusiast</h2>
-      <p>Hi, I’m Hitesh Sharma, a cybersecurity professional with hands-on experience in Web Application Penetration Testing and Vulnerability Assessment...</p>
-      <a href="#">View My Work</a>
-      <a href="#">Download Resume</a>
-
-      <h2>About Me</h2>
-      <p>I’m a Certified Ethical Hacker (CEH) with a strong foundation in web application security and a growing interest in network, mobile, and IoT penetration testing...</p>
-
-      <h2>Skills</h2>
-      <ul>
-        <li>Penetration Testing: Web, Network (beginner), Mobile (learning)</li>
-        <li>Tools: Burp Suite, OWASP ZAP, Nmap, Nikto, Metasploit, Wireshark</li>
-        <li>Techniques: SQL Injection, XSS, CSRF, Broken Authentication, IDOR</li>
-        <li>Certifications: CEH (Certified Ethical Hacker)</li>
-        <li>Platforms: TryHackMe, Hack The Box</li>
-      </ul>
-
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>Web App Pentest Report – E-Commerce Platform:</strong> Found IDOR and SQL injection. <a href="#">[View Report]</a></li>
-        <li><strong>CTFs – TryHackMe:</strong> Web exploitation, privilege escalation, etc. <a href="#">[View Badge]</a></li>
-        <li><strong>VA – Internal CRM:</strong> Used Burp Suite and Nikto. <a href="#">[Summary]</a></li>
-      </ul>
-
-      <h2>Experience</h2>
-      <p><strong>Security Analyst – Codetechlab Pvt. Ltd. (Jan 2023 – Present)</strong></p>
-      <ul>
-        <li>Performed web app pentesting using OWASP Top 10.</li>
-        <li>Discovered SQLi, XSS, IDOR. Reported & patched.</li>
-        <li>Wrote reports with remediation steps.</li>
-      </ul>
-
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:HiteSharma11111@gmail.com">HiteSharma11111@gmail.com</a></p>
-      <p>LinkedIn: <a href="#">LinkedIn URL</a></p>
-      <p>GitHub: <a href="#">GitHub URL</a></p>
+    <!-- Aside End -->
+    <!-- Main Content Start -->
+    <div class="main-content">
+      <!-- Home Section Start -->
+      <section class="home active section" id="home">
+        <div class="container">
+  <div class="row">
+    <div class="home-info padd-15">
+      <h3 class="hello">
+        Hello, my name is <span class="name">HITESH SHARMA</span>
+      </h3>
+      <h3 class="my-profession">
+        I'm a <span class="typing">Penetration Tester</span>
+      </h3>
+      <p>Welcome to my cyber defense portfolio! As a <strong>Certified Ethical Hacker (CEH)</strong>, I specialize in offensive security strategies with hands-on experience in penetration testing, vulnerability assessment, and security auditing. Currently expanding my expertise into <strong>full-stack Java development</strong> to bridge the gap between security and development.</p>
+      <!--HOME -----CHOOSE ME-----START -->
+      <div class="highlights">
+  <p><strong>Why Choose Me:</strong></p>
+  <ul>
+    <li>Ranked in <strong>Top 10% on TryHackMe</strong> with 50+ machines exploited</li>
+    <li>Proven track record of identifying <strong>critical OWASP Top 10 vulnerabilities</strong></li>
+    <li>Unique perspective as both <strong>security specialist</strong> and <strong>developer-in-training</strong></li>
+  </ul>
+</div>
+<!--HOME -----CHOOSE ME-----CLOSE -->
+<!--HOME -----CHOOSE ME-----OPEN -->
+      <!-- <div class="highlights">
+        <p><strong>Why Choose Me:</strong></p>
+        <ul>
+          <li>Ranked in <strong>Top 10% on TryHackMe</strong> with 50+ machines exploited</li>
+          <li>Proven track record of identifying <strong>critical OWASP Top 10 vulnerabilities</strong></li>
+          <li>Unique perspective as both <strong>security specialist</strong> and <strong>developer-in-training</strong></li>
+        </ul>
+      </div> -->
+      <!--HOME -----CHOOSE ME-----CLOSE -->
+      <!--DOWNLOAD CV FROM HOME PAGE -----------OPEN -->
+     <div class="cv-download-container">
+  <a href="HITESH_SHARMA____cybersecurity _analyst.pdf" class="btn cv-download-btn">
+    <i class="fas fa-download"></i> DOWNLOAD MY CV
+  </a>
+</div>
+<!--DOWNLOAD CV FROM HOME PAGE -----------CLOSE -->
+<!--DOWNLOAD CV FROM HOME PAGE -----------OPEN -->
+      <!-- <a href="#" class="btn">DOWNLOAD MY CV</a> -->
+       <!--DOWNLOAD CV FROM HOME PAGE -----------CLOSE -->
+    </div>
+    <div class="home-img padd-15">
+      <img src="images/sairedanon.png" alt="Hitesh Sharma - Security Professional" />
     </div>
   </div>
+</div>
+        <!-- <div class="container">
+          <div class="row">
+            <div class="home-info padd-15">
+              <h3 class="hello"> 
+                Hello, my name is <span class="name">HITESH  SHARMA </span>
+              </h3>
+              <h3 class="my-profession">
+                I'm a <span class="typing"></span>
+              </h3>
+              <p>Welcome to my portfolio! As a Certified Ethical Hacker, I'm specialized in ethical hacking methodologies. I possess extensive knowledge of penetration testing, vulnerability assessment, and security auditing. My goal is to identify and address potential vulnerabilities before malicious actors can exploit them.</p>
+              <a href="#" class="btn">CLICK FOR CV</a>
+            </div>
+            <div class="home-img padd-15">
+              <img src="images/sairedanon.png" alt="hero" />
+            </div>
+          </div>
+        </div> -->
+      </section>
+      <!-- Home Section End -->
 
-  <script>
-    const typewriterText = `> Hello, I'm HITESH SHARMA...\n> CEH Certified | Penetration Tester | Exploit Developer`;
-    const typewriterEl = document.getElementById('typewriter');
-    const mainEl = document.getElementById('main');
-    let i = 0;
+      <!-- About Section Start -->
+      <section class="about section" id="about">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>About Me</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="about-content padd-15">
+              <div class="row">
+                <div class="about-text padd-15">
+                  <h3>I'm Hitesh Sharma and<span> Certified Ethical Hacker&nbsp;&nbsp;</span></h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, aliquam ratione vitae labore et accusantium obcaecati ipsam modi libero saepe hic neque. At aut, modi saepe neque delectus consectetur! Ab!
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="personal-info padd-15">
+                  <div class="row">
+                    <div class="info-item padd-15">
+                      <p>Date of Birth :  --/--/2001<span></span></p>
+                    </div>
+                    <!-- <div class="info-item padd-15">
+                      <p>Age : 24<span></span></p>
+                    </div> -->
+                    <div class="info-item padd-15">
+                      <p>Website : <span>www.domain.com</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Email : <span>Hitesharma11111@gmail.com</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Degree : <span>Bachelor of Technology</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Phone : <span>+91 9024171---</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>City : <span>Jaipur</span></p>
+                    </div>
+                  </div>
 
-    function typeWriter() {
-      if (i < typewriterText.length) {
-        typewriterEl.textContent += typewriterText.charAt(i);
-        i++;
-        setTimeout(typeWriter, 50);
-      } else {
-        typewriterEl.style.borderRight = 'none';
-        setTimeout(() => {
-          document.body.style.backgroundColor = 'var(--final-bg)';
-          document.body.style.color = 'var(--final-text)';
-          typewriterEl.style.display = 'none';
-          mainEl.style.display = 'flex';
-        }, 2000);
-      }
-    }
+                  
+                  /* HIREME AND CV DOWNLOAD BUTTON Start*/
+                  <div class="row">
+                    <div class="buttons padd-15">
+                      <a href="HITESH_SHARMA____cybersecurity _analyst.pdf" class="btn">CLICK for CV</a>
+                      <a href="HITES@GMAIL.COM" class="btn hire-me">YOUR NEXT TEAM MEMBER</a>
+                    </div>
+                  </div>
+                  /* HIREME AND CV DOWNLOAD BUTTON ME-----CLOSE*/
+                </div>
+                <div class="skills padd-15">
+                  <div class="row">
+                    <div class="skills-item padd-15">
+                      <h5>Certified Ethical Hacker</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 95%"></div>
+                        <div class="skill-percent">93%</div>
+                      </div>
+                    </div>
+                    <div class="skills-item padd-15">
+                      <h5>Web Applications</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 85%"></div>
+                        <div class="skill-percent">85%</div>
+                      </div>
+                    </div>
+                    <div class="skills-item padd-15">
+                      <h5>Mobile Pentesting</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 85%"></div>
+                        <div class="skill-percent">75%</div>
+                      </div>
+                    </div>
+                    <!-- <div class="skills-item padd-15">
+                      <h5>DDoS</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 97%"></div>
+                        <div class="skill-percent">97%</div>
+                      </div> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About Section End -->
 
-    window.onload = typeWriter;
-  </script>
-</body>
-</html> -->
+      <!-- Educations & Experience Section Start -->
+      <section class="education section" id="education">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>Educations & Experience</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="education padd-15">
+              <h3 class="title">Education</h3>
+              <div class="row">
+                <div class="timeline-box padd-15">
+                  <div class="timeline shadow-dark">
+                    <!-- Timeline item -->
+                    <div class="timeline-item">
+                      <div class="circle-dot"></div>
+                      <h3 class="timeline-date">
+                        <i class="fa fa-calendar"></i> 2019 - 2023
+                      </h3>
+                      <h4 class="timeline-title">
+                       Bachelor of Technology <!-- Master in Information Technology -->
+                      </h4>
+                      <p class="timeline-text">
+                        Completed <strong> Bachelor of Technology in Electronics and Communication Engineering</strong> with a strong foundation in communication systems, digital electronics, and microcontroller-based applications.
 
+In the 7th semester, completed an internship at Omega Electronics, Jaipur, gaining insights into electronic instrumentation and circuit testing procedures.
 
+Final year <strong>project: IoT-Based Weather Monitoring System </strong>– Designed and implemented a system using sensors to collect environmental data and display it on a custom-built web application for remote monitoring and analysis.
+                      </p>
+                    </div> 
+                    /*Timeline item */+
+                    <!--Timeline item -->
+<div class="timeline-item">
+  <div class="circle-dot"></div>
+  <h3 class="timeline-date">
+    <i class="fa fa-calendar"></i> 2024
+  </h3>
+  <h4 class="timeline-title">
+    Certified Ethical Hacker (CEH)
+  </h4>
+  <p class="timeline-text">
+    Successfully completed the CEH (Certified Ethical Hacker) certification from EC-Council. Developed practical skills in ethical hacking, penetration testing, and cybersecurity tools.  
+    <br>
+    <a href="https://github.com/theh1t3sh/theh1t3sh/blob/main/Certificate/ECC-CEH-Certificate.pdf" target="_blank" style="color: #007bff; text-decoration: underline;">
+      View Certificate
+    </a>
+  </p>
+</div>
 
+                    <!-- Timeline item -->
+<div class="timeline-item">
+  <div class="circle-dot"></div>
+  <h3 class="timeline-date">
+    <i class="fa fa-calendar"></i> March 2025 - Present
+  </h3>
+  <h4 class="timeline-title">
+    Full Stack Java Developer Trainee
+  </h4>
+  <p class="timeline-text">
+    Currently enrolled in an intensive 16-week Full Stack Java Developer program at Vinsys IT Services Pvt. Ltd., in partnership with Generation India. Gaining hands-on experience with Java, HTML5, CSS3, JavaScript, React, MySQL, GitHub, SDLC, and more. Engaging in real-world projects to develop and deploy scalable web applications. Collaborating with peers and mentors to enhance problem-solving and coding skills. Benefiting from a structured curriculum designed to bridge the gap between education and employment in the tech industry.
+  </p>
+</div>
 
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HITESH - Cybersecurity Portfolio</title>
-  <style>
-    :root {
-      --initial-bg: #000;
-      --initial-text: #00ff00;
-      --final-bg: #1a1a2e;
-      --final-text: #f1f1f1;
-    }
+                    <!--/*Timeline item */
+                    <div class="timeline-item">
+                      <div class="circle-dot"></div>
+                      <h3 class="timeline-date">
+                        <i class="fa fa-calendar"></i> 2023 - 2026
+                      </h3>
+                      <h4 class="timeline-title">
+                        Master in Information Technology
+                      </h4>
+                      <p class="timeline-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ab vitae voluptatum, nobis earum magni quaerat quasi laborum omnis repellendus nostrum? Eveniet odio sapiente sit dolor temporibus repudiandae nostrum cupiditate.
+                      </p>
+                    </div> --> 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="experience padd-15">
+              <h3 class="title">Experience</h3>
+              <div class="row">
+                <div class="timeline-box padd-15">
+                  <div class="timeline shadow-dark">
+                   <!-- Timeline item -->
+<div class="timeline-item">
+  <div class="circle-dot"></div>
+  <h3 class="timeline-date">
+    <i class="fa fa-calendar"></i> January 2024 - February 2025
+  </h3>
+  <h4 class="timeline-title">
+    Cyber Security Analyst
+  </h4>
+  <p class="timeline-text">
+    Worked as a <strong>Penetration Tester </strong> at Codetechlab Pvt. Ltd. in Jaipur. Conducted penetration testing on web applications, networks, and internal systems to identify security vulnerabilities. Utilized tools like Burp Suite, Metasploit, Nmap, Nessus, and Wireshark to assess and exploit security weaknesses. Documented findings, provided risk assessments, and collaborated with development teams to fix vulnerabilities and improve security posture.
+  </p>
+</div>
 
-    body {
-      background-color: var(--initial-bg);
-      color: var(--initial-text);
-      font-family: 'Courier New', Courier, monospace;
-      margin: 0;
-      padding: 2rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      overflow: hidden;
-      transition: background-color 1s ease, color 1s ease;
-    }
+                    <!-- /* Timeline item */
+                    <div class="timeline-item">
+                      <div class="circle-dot"></div>
+                      <h3 class="timeline-date">
+                        <i class="fa fa-calendar"></i> 2021
+                      </h3>
+                      <h4 class="timeline-title">
+                        Master in Information Technology
+                      </h4>
+                      <p class="timeline-text">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint nesciunt consectetur repellendus sunt dolorem perferendis, hic tenetur necessitatibus voluptas cupiditate laudantium laboriosam, consequuntur unde facere. Beatae molestias dolorem at expedita.
+                      </p>
+                    </div>
+                   /* Timeline item */
+                    <div class="timeline-item">
+                      <div class="circle-dot"></div>
+                      <h3 class="timeline-date">
+                        <i class="fa fa-calendar"></i> 2021
+                      </h3>
+                      <h4 class="timeline-title">
+                        Master in Information Technology
+                      </h4>
+                      <p class="timeline-text">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint nesciunt consectetur repellendus sunt dolorem perferendis, hic tenetur necessitatibus voluptas cupiditate laudantium laboriosam, consequuntur unde facere. Beatae molestias dolorem at expedita.
+                      </p>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+      </section>
+      <!-- Educations & Experience Section End -->
 
-    #typewriter {
-      max-width: 80ch;
-      white-space: pre-wrap;
-      font-size: 1.2rem;
-      border-right: 2px solid;
-      animation: blink 0.8s step-end infinite;
-    }
-
-    @keyframes blink {
-      50% { border-color: transparent; }
-    }
-
-    #content {
-      display: none;
-      max-width: 800px;
-      font-family: Arial, sans-serif;
-    }
-
-    h1, h2 {
-      margin: 1rem 0 0.5rem;
-    }
-
-    button, a {
-      background-color: #00ffcc;
-      color: #000;
-      padding: 0.5rem 1rem;
-      margin: 0.5rem 0.5rem 0 0;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      text-decoration: none;
-      font-weight: bold;
-    }
-  </style>
-</head>
-<body>
-  <div id="typewriter"></div>
-  <div id="content">
-    <h1>Securing the Digital World, One Vulnerability at a Time.</h1>
-    <h2>Certified Ethical Hacker | Web Application Pentester | Cybersecurity Enthusiast</h2>
-    <p>Hi, I’m Hitesh Sharma, a cybersecurity professional with hands-on experience in Web Application Penetration Testing and Vulnerability Assessment. I’m passionate about discovering security flaws before attackers do and helping organizations protect their digital assets.</p>
-    <a href="#">View My Work</a>
-    <a href="#">Download Resume</a>
-
-    <h2>About Me</h2>
-    <p>I’m a Certified Ethical Hacker (CEH) with a strong foundation in web application security and a growing interest in network, mobile, and IoT penetration testing...</p>
-
-    <h2>Skills</h2>
-    <ul>
-      <li>Penetration Testing: Web, Network (beginner), Mobile (learning)</li>
-      <li>Tools: Burp Suite, OWASP ZAP, Nmap, Nikto, Metasploit, Wireshark</li>
-      <li>Techniques: SQL Injection, XSS, CSRF, Broken Authentication, IDOR</li>
-      <li>Certifications: CEH (Certified Ethical Hacker)</li>
-      <li>Platforms: TryHackMe, Hack The Box</li>
-    </ul>
-
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>Web App Pentest Report – E-Commerce Platform:</strong> Found IDOR and SQL injection. <a href="#">[View Report]</a></li>
-      <li><strong>CTFs – TryHackMe:</strong> Web exploitation, privilege escalation, etc. <a href="#">[View Badge]</a></li>
-      <li><strong>VA – Internal CRM:</strong> Used Burp Suite and Nikto. <a href="#">[Summary]</a></li>
-    </ul>
-
-    <h2>Experience</h2>
-    <p><strong>Security Analyst – Codetechlab Pvt. Ltd. (Jan 2023 – Present)</strong></p>
-    <ul>
-      <li>Performed web app pentesting using OWASP Top 10.</li>
-      <li>Discovered SQLi, XSS, IDOR. Reported & patched.</li>
-      <li>Wrote reports with remediation steps.</li>
-    </ul>
-
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:HiteSharma11111@gmail.com">HiteSharma11111@gmail.com</a></p>
-    <p>LinkedIn: <a href="#">LinkedIn URL</a></p>
-    <p>GitHub: <a href="#">GitHub URL</a></p>
-  </div>
-
-  <script>
-    const typewriterText = `> Hello, I'm HITESH SHARMA...\n> CEH Certified | Penetration Tester | Exploit Developer`;
-    const typewriterEl = document.getElementById('typewriter');
-    const contentEl = document.getElementById('content');
-    let i = 0;
-
-    function typeWriter() {
-      if (i < typewriterText.length) {
-        typewriterEl.textContent += typewriterText.charAt(i);
-        i++;
-        setTimeout(typeWriter, 50);
-      } else {
-        typewriterEl.style.borderRight = 'none';
-        setTimeout(() => {
-          document.body.style.backgroundColor = 'var(--final-bg)';
-          document.body.style.color = 'var(--final-text)';
-          typewriterEl.style.display = 'none';
-          contentEl.style.display = 'block';
-        }, 2000);
-      }
-    }
-
-    window.onload = typeWriter;
-  </script>
-</body>
-</html>
- -->
- <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HITESH SHARMA | Ethical Hacker</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #0f0f0f;
-      color: #00ffcc;
-      line-height: 1.6;
-    }
-
-    header {
-      padding: 2rem;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-
-    header h2 {
-      font-weight: normal;
-      color: #ccc;
-    }
-
-    section {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    .buttons a {
-      display: inline-block;
-      margin: 0.5rem;
-      padding: 0.75rem 1.5rem;
-      color: #0f0f0f;
-      background: #00ffcc;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-
-    h3 {
-      color: #00ffaa;
-    }
-
-    ul {
-      list-style: square;
-      margin-left: 2rem;
-    }
-
-    .contact a {
-      color: #00ffcc;
-      text-decoration: underline;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Securing the Digital World, One Vulnerability at a Time.</h1>
-    <h2>Certified Ethical Hacker | Web Application Pentester | Cybersecurity Enthusiast</h2>
-  </header>
-
-  <section>
-    <p>
-      Hi, I’m HITESH SHARMA, a cybersecurity professional with hands-on experience in Web Application
-      Penetration Testing and Vulnerability Assessment. I’m passionate about discovering security flaws
-      before attackers do and helping organizations protect their digital assets.
-    </p>
-    <div class="buttons">
-      <a href="#projects">View My Work</a>
-      <a href="Resume/Hitesh_Resume.pdf" target="_blank">Download Resume</a>
+      <!-- Contact Section Start -->
+      <section class="contact section" id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>Contact Me</h2>
+            </div>
+          </div>
+          <h3 class="contact-title padd-15">Do You Have Any Questions?</h3>
+          <h4 class="contact-sub-title padd-15">I'M AT YOUR education</h4>
+          <div class="row">
+            <!-- Contact info item-->
+            <div class="contact-info-item padd-15">
+              <div class="icon"><i class="fa fa-phone"></i></div>
+              <h4>Phone No.</h4>
+              <p>+91 9024171---</p>
+            </div>
+            <!-- Contact info item-->
+            <div class="contact-info-item padd-15">
+              <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
+              <h4>Location</h4>
+              <p>India</p>
+            </div>
+            <!-- Contact info item-->
+            <div class="contact-info-item padd-15">
+              <div class="icon"><i class="fa fa-envelope"></i></div>
+              <h4>Email</h4>
+              <p>Hitesharma11111@gmail.com</p>
+            </div>
+            <!-- Contact info item-->
+            <div class="contact-info-item padd-15">
+              <div class="icon"><i class="fa fa-globe-europe"></i></div>
+              <h4>LinkedIn</h4>
+              <p><a href="#">HITESH SHARMA/</a></p>
+            </div>
+          </div>
+          <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
+          <h4 class="contact-sub-title padd-15">
+            I am highly responsive and prompt in replying to messages.
+          </h4>
+          <!-- Contact form -->
+          <div class="row">
+            <div class="contact-form padd-15">
+              <div class="row">
+                <div class="form-item col-6 padd-15">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Name" />
+                  </div>
+                </div>
+                <div class="form-item col-6 padd-15">
+                  <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Email" />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-item col-12 padd-15">
+                  <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Subject" />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-item col-12 padd-15">
+                  <div class="form-group">
+                    <textarea class="form-control" placeholder="Message"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-item col-12 padd-15">
+                  <div class="form-group">
+                    <button type="submit" class="btn">Send Message</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact Section End -->
     </div>
-  </section>
-
-  <section>
-    <h3>About Me</h3>
-    <p>
-      I’m a Certified Ethical Hacker (CEH) with a strong foundation in web application security and a
-      growing interest in network, mobile, and IoT penetration testing. My work revolves around
-      simulating real-world attacks to uncover hidden vulnerabilities and ensuring systems are resilient
-      against modern threats.
-    </p>
-    <p>
-      I’ve worked with teams to test applications, identify misconfigurations, and recommend mitigation
-      strategies. When I’m not testing systems, I stay up to date on the latest CVEs and practice my
-      skills on platforms like TryHackMe and Hack The Box.
-    </p>
-  </section>
-
-  <section>
-    <h3>Skills</h3>
-    <ul>
-      <li>Penetration Testing: Web, Network (beginner), Mobile (learning)</li>
-      <li>Tools: Burp Suite, OWASP ZAP, Nmap, Nikto, Metasploit, Wireshark</li>
-      <li>Techniques: SQL Injection, XSS, CSRF, Broken Authentication, IDOR</li>
-      <li>Certifications: CEH (Certified Ethical Hacker)</li>
-      <li>Platforms: TryHackMe, Hack The Box</li>
-    </ul>
-  </section>
-
-  <section id="projects">
-    <h3>Projects</h3>
-    <ul>
-      <li>
-        <strong>Web App Pentest Report – E-Commerce Platform</strong><br />
-        Used OWASP Top 10 methodology to test a sample e-commerce site. Found critical IDOR and SQL injection vulnerabilities.
-        <br /><a href="Reports/Ecommerce-Pentest.pdf" target="_blank">View Report</a>
-      </li>
-      <li>
-        <strong>Capture The Flag Challenges – TryHackMe</strong><br />
-        Completed multiple CTFs including web exploitation, privilege escalation, and enumeration.
-        <br /><a href="https://tryhackme.com/p/hitesh" target="_blank">View Badge or Write-Up</a>
-      </li>
-      <li>
-        <strong>Vulnerability Assessment – Internal CRM</strong><br />
-        Assessed a CRM system using Burp Suite and Nikto; documented findings and proposed fixes.
-        <br /><a href="Screenshots/CRM-Findings.png" target="_blank">Summary or Screenshots</a>
-      </li>
-    </ul>
-  </section>
-
-  <section>
-    <h3>Experience</h3>
-    <p><strong>Security Analyst – Codetechlab Pvt. Ltd.</strong><br />
-    Jan 2023 – Present</p>
-    <ul>
-      <li>Performed comprehensive Web Application Penetration Testing following OWASP Top 10 standards</li>
-      <li>Discovered and reported critical vulnerabilities including SQLi, XSS, and IDOR</li>
-      <li>Collaborated with developers to implement effective security patches and improvements</li>
-      <li>Prepared professional pentest reports with detailed technical findings and actionable remediation steps</li>
-      <li>Contributed to internal security research and knowledge-sharing initiatives</li>
-    </ul>
-  </section>
-
-  <section class="contact">
-    <h3>Contact</h3>
-    <p>Let’s secure something together.</p>
-    <p>Email: <a href="mailto:HiteSharma11111@gmail.com">HiteSharma11111@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
-    <p>GitHub: <a href="https://github.com/cyberali92" target="_blank">github.com/cyberali92</a></p>
-    <p><a href="Resume/Hitesh_Resume.pdf" target="_blank">Download Resume</a></p>
-  </section>
+    <!-- Main Content End -->
+  </div>
+  <!-- Main Container End -->
+  <!-- Custom JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+    referrerpolicy="no-referrer"></script>
+  <script src="js/script.js"></script>
 </body>
-</html>
 
+</html>
